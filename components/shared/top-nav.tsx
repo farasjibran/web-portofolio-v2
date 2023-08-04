@@ -32,23 +32,23 @@ import { useLinkColor } from 'components/theme';
 import { MotionBox } from 'components/shared/animations/motion';
 
 const webLinks = [
-  { name: 'About', path: '/about' },
-  { name: 'Blog', path: '/blog' }
+  { name: 'About', path: '/about' }
+  // { name: 'Blog', path: '/blog' }
 ];
 
 const mobileLinks = [
   { name: 'Projects', path: '/projects' },
-  { name: 'Open Source', path: '/open-source' },
-  { name: 'Blog', path: '/blog' },
-  { name: 'Changelog', path: '/changelog' }
+  { name: 'Open Source', path: '/open-source' }
+  // { name: 'Blog', path: '/blog' },
+  // { name: 'Changelog', path: '/changelog' }
 ];
 
 const dropdownLinks = [
   { name: 'Projects', path: '/projects' },
   { name: 'Tech Stack', path: '/tech-stack' },
-  { name: 'Open Source', path: '/open-source' },
-  { name: 'Achievements', path: '/achievements' },
-  { name: 'Changelog', path: '/changelog' }
+  { name: 'Open Source', path: '/open-source' }
+  // { name: 'Achievements', path: '/achievements' },
+  // { name: 'Changelog', path: '/changelog' }
   // { name: "Developer Story", path: "/developer-story" }
 ];
 
@@ -171,7 +171,9 @@ export default function TopNav() {
                   size={'sm'}
                   showBorder={true}
                   borderColor={linkColor}
-                  src={'https://avatars2.githubusercontent.com/u/37842853?v=4'}
+                  src={
+                    'https://avatars.githubusercontent.com/u/50952131?s=400&u=8e68894cff9ab27046b758e4dec24a86dde4ff9c&v=4'
+                  }
                 />
               </NextLink>
             </MotionBox>

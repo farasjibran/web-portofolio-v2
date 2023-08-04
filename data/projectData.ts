@@ -1,73 +1,38 @@
 export const projectsList = [
   {
-    title: 'Smata',
-    imageLight: '/assets/images/projects/cover/smata.png',
+    title: 'Pintar MOOC',
+    imageLight: '/assets/images/projects/cover/Pintar.png',
     blurHash: 'L4ADc400P*Zi4Tu1y;Qo00pH#YXl',
-    site: 'https://smata.com/',
+    site: 'https://pintar.kemenag.go.id/',
     description:
-      'SMATA IS AN ALL-IN-ONE CLOUD-BASED SOLUTION, INTEGRATING MANAGEMENT, COMMUNICATION & ACCOUNTING FUNCTIONS.',
-    techStack: ['Rails', 'React', 'Javascript']
+      'PINTAR adalah akronim dari Pusat Informasi Pelatihan dan Pembelajaran. PINTAR merupakan pelatihan online mandiri bersertifikat yang diselenggarakan oleh Pusdiklat Kementerian Agama.',
+    techStack: ['React', 'Javascript', 'Lumen', 'Tailwind']
   },
   {
-    title: 'Peterpitch',
-    imageLight: '/assets/images/projects/cover/peterpitch.png',
+    title: 'HCN HOLDING Tour',
+    imageLight: '/assets/images/projects/cover/HCN.png',
     blurHash: 'L4ADc400P*Zi4Tu1y;Qo00pH#YXl',
-    site: 'https://peterpitch.com/',
+    site: 'https://nevermindtour.web.app/',
     description:
-      'Peterpitch is a tool that takes the fun in your company seriously and turns your meetings into real performance boosters.',
-    techStack: ['Rails', 'React', 'Javascript']
+      'HCN Holding Tour adalah project yang menggunakan teknologi VR, dimana user dapat melakukan interaksi dengan melihat keadaan kantor virtual.',
+    techStack: ['React', 'Javascript', 'VR']
   },
   {
-    title: 'TemplatesKart',
-    imageLight: '/assets/images/projects/cover/templateskart.png',
+    title: 'Sistem Informasi Nahdatul Ulama',
+    imageLight: '/assets/images/projects/cover/NU.png',
     blurHash: 'L4ADc400P*Zi4Tu1y;Qo00pH#YXl',
-    site: 'https://templateskart.com',
-    gitHub: 'https://github.com/MA-Ahmad/templatesKart',
+    site: 'https://nu-kaderisasi-fe.vercel.app/',
     description:
-      'TemplatesKart provides the best Chakra UI templates. Production-ready hand crafted Projects and Components built on top of ChakraUI.',
-    techStack: ['React', 'Nextjs', 'ChakraUI']
+      'Sistem Informasi Nahdatul Ulama adalah project yang di kerjakan untuk mempermudah Kaderisasi dari calon peserta Nahdatul Ulama.',
+    techStack: ['Nextjs', 'Javascript', 'ChakraUI']
   },
   {
-    title: 'Notch',
-    site: 'https://www.hellonotch.com/',
-    imageLight: '/assets/images/projects/cover/notch.png',
+    title: 'E-Approval',
+    imageLight: '/assets/images/projects/cover/Approval.png',
     blurHash: 'L0Aer?tjH[tPyAayj[j[00ay%xkB',
+    // site: 'http://165.22.105.104/',
     description:
-      'This is a project management website for design and procurement teams. It helps to collaborate and manage all of your floor plans in one place.',
-    techStack: ['Rails', 'Javascript']
-  },
-  {
-    title: 'Workof Ecommerce',
-    imageLight: '/assets/images/projects/cover/workof.png',
-    blurHash: 'L2M5%%0000EN00I:-oIp00kC?^sl',
-    site: 'https://workof.com/',
-    description:
-      'This is an Ecommerce furniture site. It provides a single platform to multiple vendors where they can put their products on sale.',
-    techStack: ['Rails', 'Javascript']
-  },
-  {
-    title: 'Souq of Qatar',
-    imageLight: '/assets/images/projects/cover/souq.png',
-    blurHash: 'L1O^uE0679I00AGT?.H{00y7p2tK',
-    site: 'https://www.souqofqatar.com/',
-    description:
-      'Souq of Qatar is online comparison website. This website is independent of any retailers, it displays the products of all the major stores.',
-    techStack: ['Rails', 'Javascript']
-  },
-  {
-    title: 'GoSave',
-    imageLight: '/assets/images/projects/cover/gosave.png',
-    blurHash: 'L09sWSxdH;s?%6axWAfk00V?%jax',
-    site: 'https://gosavehq.com/',
-    description: `The GoSave app let's you send allowances, assign chores, and approve spending all from your smartphone.`,
-    techStack: ['Rails']
-  },
-  {
-    title: 'Hiredroid',
-    imageLight: '/assets/images/projects/cover/hiredroid.png',
-    blurHash: 'L09sWSxdH;s?%6axWAfk00V?%jax',
-    site: 'https://hiredroid.com',
-    description: `Hiredroid help professionals reach the very pinnacle and stay there. For professionals who aspire perfection, we have made it easy for you by introducing skill-based hiring system, to help you attract the best talent from around the world.`,
-    techStack: ['React', 'Nodejs']
+      'Project ini dibuat untuk mempermudah perusahaan dalam menandatangani dokumen yang perlu di tanda tangan menggunakan PSRE atau perlu di materai karena sudah terintegrasi dengan PSRE.',
+    techStack: ['Laravel', 'Livewire']
   }
 ];

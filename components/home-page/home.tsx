@@ -1,30 +1,16 @@
 import { useEffect, useState } from 'react';
-import {
-  Flex,
-  Avatar,
-  Box,
-  Text,
-  Badge,
-  Stack,
-  Link,
-  UnorderedList,
-  ListItem,
-  useColorModeValue
-} from '@chakra-ui/react';
+import { Flex, Avatar, Box, HStack, Text, Link } from '@chakra-ui/react';
 import { MotionBox, MotionFlex } from 'components/shared/animations/motion';
 import Header from 'components/shared/header';
-import NextLink from 'next/link';
 import { useLinkColor } from 'components/theme';
-import PopularArticles from './PopularArticles';
 import { BlogPostProps } from 'interfaces/interface';
-import { newContent } from 'data/data';
+import NextLink from 'next/link';
 
 const ANIMATION_DURATION = 0.5;
 const ORANGE = '#ff9400';
 const emojis = ['👋', '👍', '🖐'];
 
-const Home: React.FC<BlogPostProps> = (props) => {
-  const { posts } = props;
+const Home: React.FC<BlogPostProps> = () => {
   const linkColor = useLinkColor();
   const [showEmogi, setShowEmoji] = useState(false);
   const [emojiCounter, setEmojiCounter] = useState(-1);
@@ -60,7 +46,9 @@ const Home: React.FC<BlogPostProps> = (props) => {
               size={'2xl'}
               showBorder={true}
               borderColor={linkColor}
-              src={'https://avatars2.githubusercontent.com/u/37842853?v=4'}
+              src={
+                'https://avatars.githubusercontent.com/u/50952131?s=400&u=8e68894cff9ab27046b758e4dec24a86dde4ff9c&v=4'
+              }
             />
           </MotionBox>
         </MotionBox>
@@ -127,18 +115,15 @@ const Home: React.FC<BlogPostProps> = (props) => {
           <Box as="h2" fontSize="2xl" fontWeight="400" textAlign="left">
             My name is{' '}
             <Box as="strong" fontWeight="600">
-              Ahmad
+              Farras
             </Box>{' '}
             and I&apos;m a{' '}
             <Box as="span" whiteSpace="nowrap">
-              Full Stack Developer and
+              Full Stack Developer
             </Box>{' '}
-            <Box as="span" whiteSpace="nowrap">
-              an open source lover&nbsp;
-            </Box>
             from{' '}
             <Box as="span" whiteSpace="nowrap">
-              Pakistan 🇵🇰
+              Indonesia 🇮🇩
             </Box>
           </Box>
           <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
@@ -165,59 +150,25 @@ const Home: React.FC<BlogPostProps> = (props) => {
         zIndex={1}
       >
         <Box mt={10}>
-          <ContentBox linkColor={linkColor} />
-          <PopularArticles posts={posts} />
+          <HStack justifyContent="center" width="100%">
+            <NextLink href="/about" passHref>
+              <HStack spacing={2} as={Link} color={linkColor}>
+                <Text fontSize="sm">More About Me</Text>
+                <Box height="1.2rem" width="1.2rem">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                      fillRule="evenodd"
+                      d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.415l.707-.708zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </Box>
+              </HStack>
+            </NextLink>
+          </HStack>
         </Box>
       </MotionBox>
     </Flex>
-  );
-};
-
-const ContentBox = ({ linkColor }) => {
-  return (
-    <Stack
-      mb={10}
-      mx={[0, 0, 10]}
-      padding={4}
-      align="start"
-      borderLeft="4px solid"
-      borderColor={linkColor}
-      color={'whatsapp'}
-      _hover={{ shadow: 'lg' }}
-      backgroundColor={useColorModeValue('gray.100', '#1e2533')}
-      rounded="sm"
-      fontSize="md"
-    >
-      <Text
-        textAlign="center"
-        color="#53c8c4"
-        fontWeight="bold"
-        fontSize={['md', 'lg']}
-        variant="gradient"
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-ignore
-        fromcolor="blue.400"
-        tocolor="red.500"
-      >
-        Content:
-      </Text>
-      <UnorderedList textAlign="left" paddingLeft={5} m={0}>
-        {newContent.map((content, index) => (
-          <ListItem key={index}>
-            <NextLink href={content.link} passHref>
-              <Link color={linkColor}>
-                {content.text}
-                {content.showNewTag && (
-                  <Badge ml="1" colorScheme="green">
-                    New
-                  </Badge>
-                )}
-              </Link>
-            </NextLink>
-          </ListItem>
-        ))}
-      </UnorderedList>
-    </Stack>
   );
 };
 

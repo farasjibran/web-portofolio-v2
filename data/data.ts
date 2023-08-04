@@ -1,93 +1,37 @@
 export const companies = [
   {
-    title: 'Nalikes Studio',
-    alt: 'NS image',
-    role: 'Senior Software Engineer',
-    skills: ['web3', 'nextjs', 'rails', 'typescript', 'react', 'aws', 'heroku'],
-    period: '2023 - Present',
-    logo: '/assets/images/logos/nalikes-studio.png'
+    title: 'IMP Studio',
+    alt: 'IMP Studio image',
+    role: 'Fullstack Developer',
+    skills: ['Next JS', 'Laravel', 'Lumen', 'Codeigniter', 'Parse JS'],
+    period: '2022 - Present',
+    logo: '/assets/images/logos/imp_studio_2.jpeg'
   },
   {
-    title: 'Big Wolf Games',
-    alt: 'BW image',
-    role: 'Senior Software Engineer',
-    skills: ['ruby', 'rails', 'typescript', 'react', 'pixi', 'aws', 'heroku', 'serverless'],
-    period: '2021 - 2023',
-    logo: '/assets/images/logos/bigwolf.png'
-  },
-  {
-    title: 'Phaedra Solutions',
-    alt: 'PS image',
-    role: 'Senior Software Engineer',
-    skills: ['ruby', 'rails', 'typescript', 'javascript', 'react', 'aws'],
-    period: '2019 - 2021',
-    logo: '/assets/images/logos/phaedra.jpeg'
-  },
-  {
-    title: 'Brainx Technologies',
-    alt: 'BT image',
-    role: 'Software Engineer',
-    skills: ['ruby', 'rails', 'javascript', 'python'],
-    period: '2018 - 2019',
-    logo: '/assets/images/logos/brainxtech.png'
-  },
-  // {
-  //   title: "Codenya Studio",
-  //   alt: "CS image",
-  //   role: "Co-founder, CTO",
-  //   skills: ["ruby", "rails", "python", "typescript", "react", "aws"],
-  //   period: "2018 - Present",
-  //   logo: '/assets/images/logos/codenya.png'
-  // },
-  {
-    title: 'Brainplow',
-    alt: 'Brainplow image',
-    role: 'Software Engineer',
-    skills: ['javascript', 'python', 'angular'],
-    period: '2017 - 2018',
-    logo: '/assets/images/logos/brainplow.jpg'
+    title: 'Rumah Coding',
+    alt: 'Rumah Coding image',
+    role: 'Trainer',
+    skills: ['React JS', 'Laravel'],
+    period: '2021 - 2022',
+    logo: '/assets/images/logos/RC.png'
   }
 ];
 
 export const institutes = [
   {
-    short_title: 'FAST - NUCES',
-    title: 'National University of Computer and Emerging Sciences',
-    alt: 'Nuces image',
-    role: "Bachelor's Degree in Computer Science",
-    skills: ['project management', 'web development', 'data structures'],
-    period: '2013 - 2017',
-    startingYear: '2013',
-    logo: '/assets/images/logos/fast.png',
-    awards: [
-      {
-        title: 'Speed Programming Battle',
-        description: 'Won speed programming battle which held at FAST - NUCES.',
-        date: 'May 1, 2015'
-      },
-      {
-        title: 'Silver Medal',
-        description:
-          'This medal was awarded to me by FAST - NUCES for getting a CGPA of 3.9 in 2nd semester.',
-        date: 'May 1, 2014'
-      },
-      {
-        title: 'Speed Programming Battle',
-        description: 'Won speed programming battle which held at FAST - NUCES.',
-        date: 'Nov 1, 2013'
-      }
-    ]
+    short_title: 'UT',
+    title: 'University Of Open',
+    alt: 'UT image',
+    role: "Bachelor's Degree in Information Systems",
+    skills: ['web development', 'data structures'],
+    period: '2022 - Present',
+    startingYear: '2022',
+    logo: '/assets/images/logos/ut_logo.png',
+    awards: []
   }
 ];
 
 export const skillsArray = [
-  {
-    name: 'Ruby on Rails',
-    description: 'Web development',
-    link: 'https://rubyonrails.org/',
-    type: 'development',
-    image: '/assets/images/skills/rails.png'
-  },
   {
     name: 'React',
     description: 'Web development',
@@ -96,18 +40,25 @@ export const skillsArray = [
     image: '/assets/images/skills/react.png'
   },
   {
-    name: 'Ruby',
-    description: 'Web development, scrapping',
-    link: 'https://www.ruby-lang.org/en/',
+    name: 'Next Js',
+    description: 'Web development',
+    link: 'https://nextjs.org/',
     type: 'development',
-    image: '/assets/images/skills/ruby.png'
+    image: '/assets/images/skills/Next.png'
   },
   {
-    name: 'Python',
-    description: 'Web development, scrapping',
-    link: 'https://www.python.org/',
+    name: 'Laravel',
+    description: 'Web development',
+    link: 'https://laravel.com/',
     type: 'development',
-    image: '/assets/images/skills/python.png'
+    image: '/assets/images/skills/laravel.png'
+  },
+  {
+    name: 'Lumen',
+    description: 'Web development',
+    link: 'https://lumen.laravel.com/',
+    type: 'development',
+    image: '/assets/images/skills/lumen.png'
   },
   {
     name: 'Javascript',
@@ -157,27 +108,6 @@ export const skillsArray = [
     link: 'https://www.mysql.com/',
     type: 'database',
     image: '/assets/images/skills/mysql.png'
-  },
-  {
-    name: 'Redis',
-    description: 'Database',
-    link: 'https://redis.io/',
-    type: 'database',
-    image: '/assets/images/skills/redis.png'
-  },
-  {
-    name: 'Heroku',
-    description: 'Devops',
-    link: 'https://www.heroku.com/',
-    type: 'devops',
-    image: '/assets/images/skills/heroku.png'
-  },
-  {
-    name: 'AWS',
-    description: 'Devops',
-    link: 'https://aws.amazon.com/',
-    type: 'devops',
-    image: 'assets/images/skills/aws.png'
   },
   {
     name: 'Digital Ocean',

@@ -1,17 +1,9 @@
-import {
-  Stack,
-  IconButton,
-  Link,
-  Box,
-  Text,
-  useColorModeValue,
-  Flex
-} from "@chakra-ui/react";
-import siteConfig from "../../configs/site-config";
+import { Stack, IconButton, Link, Box, Text, useColorModeValue, Flex } from '@chakra-ui/react';
+import siteConfig from '../../configs/site-config';
 
 const iconProps = {
-  variant: "ghost",
-  size: "lg",
+  variant: 'ghost',
+  size: 'lg',
   isRound: true
 };
 
@@ -24,24 +16,20 @@ const Footer = () => {
       p={4}
       justifyContent="space-between"
       alignItems="center"
-      w={["100%", "85%", "80%"]}
+      w={['100%', '85%', '80%']}
       maxW={800}
       mx="auto"
     >
       <Flex
-        flexDirection={["column", "column", "row"]}
-        flexFlow={["column-reverse", "column-reverse"]}
-        justifyContent={["center", "space-between"]}
+        flexDirection={['column', 'column', 'row']}
+        flexFlow={['column-reverse', 'column-reverse']}
+        justifyContent={['center', 'space-between']}
         alignItems="center"
         w="100%"
       >
         {/* <HStack> */}
-        <Text
-          textAlign="center"
-          fontSize="sm"
-          color={useColorModeValue("gray.500", "gray.200")}
-        >
-          © {new Date().getFullYear()} Muhammad Ahmad{" "}
+        <Text textAlign="center" fontSize="sm" color={useColorModeValue('gray.500', 'gray.200')}>
+          © {new Date().getFullYear()} Muhammad Farras Jibran{' '}
         </Text>
         {/* <Box fontSize="md" textAlign="left">
         Website built with
