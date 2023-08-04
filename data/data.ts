@@ -4,7 +4,7 @@ export const companies = [
     alt: 'IMP Studio image',
     role: 'Fullstack Developer',
     skills: ['Next JS', 'Laravel', 'Lumen', 'Codeigniter', 'Parse JS'],
-    period: '2022 - Present',
+    period: '2021 - Present',
     logo: '/assets/images/logos/imp_studio_2.jpeg'
   },
   {
@@ -94,6 +94,20 @@ export const skillsArray = [
     link: 'https://getbootstrap.com/',
     type: 'design',
     image: '/assets/images/skills/bootstrap.png'
+  },
+  {
+    name: 'Chakra UI',
+    description: 'Web design',
+    link: 'https://chakra-ui.com/',
+    type: 'design',
+    image: '/assets/images/skills/Chakra.png'
+  },
+  {
+    name: 'Tailwind',
+    description: 'Web design',
+    link: 'https://tailwindcss.com/',
+    type: 'design',
+    image: '/assets/images/skills/Tailwind.jpeg'
   },
   {
     name: 'Postgres',
