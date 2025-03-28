@@ -1,31 +1,13 @@
 import Home from 'components/home-page/home';
-import { GetStaticProps, NextPage } from 'next';
-import { BlogPostProps } from 'interfaces/interface';
 import PageLayout from 'components/layouts/pageLayout';
-import { getDevtoPosts } from 'lib/fetchPosts';
+import { NextPage } from 'next';
 
-const Index: NextPage<BlogPostProps> = (props) => {
-  const { posts } = props;
+const Index: NextPage = () => {
   return (
     <PageLayout title="Muhammad Farras Jibran - Full Stack Developer">
-      <Home posts={posts} />
+      <Home />
     </PageLayout>
   );
-};
-
-export const getStaticProps: GetStaticProps = async () => {
-  const posts = await getDevtoPosts();
-
-  if (!posts) {
-    return {
-      notFound: true
-    };
-  }
-
-  return {
-    props: { posts },
-    revalidate: 1
-  };
 };
 
 export default Index;

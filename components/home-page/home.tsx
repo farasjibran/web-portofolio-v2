@@ -1,16 +1,14 @@
-import { useEffect, useState } from 'react';
-import { Flex, Avatar, Box, HStack, Text, Link } from '@chakra-ui/react';
+import { Avatar, Box, Flex } from '@chakra-ui/react';
 import { MotionBox, MotionFlex } from 'components/shared/animations/motion';
 import Header from 'components/shared/header';
 import { useLinkColor } from 'components/theme';
-import { BlogPostProps } from 'interfaces/interface';
-import NextLink from 'next/link';
+import { useEffect, useState } from 'react';
 
 const ANIMATION_DURATION = 0.5;
 const ORANGE = '#ff9400';
 const emojis = ['👋', '👍', '🖐'];
 
-const Home: React.FC<BlogPostProps> = () => {
+const Home: React.FC = () => {
   const linkColor = useLinkColor();
   const [showEmogi, setShowEmoji] = useState(false);
   const [emojiCounter, setEmojiCounter] = useState(-1);
@@ -46,9 +44,7 @@ const Home: React.FC<BlogPostProps> = () => {
               size={'2xl'}
               showBorder={true}
               borderColor={linkColor}
-              src={
-                'https://avatars.githubusercontent.com/u/50952131?s=400&u=8e68894cff9ab27046b758e4dec24a86dde4ff9c&v=4'
-              }
+              src="assets/images/jibran.webp"
             />
           </MotionBox>
         </MotionBox>
@@ -108,66 +104,51 @@ const Home: React.FC<BlogPostProps> = () => {
                   setShowEmoji(true);
                 }}
               >
-                Hey!
+                Holaa!
               </Header>
             </MotionBox>
           </Box>
           <Box as="h2" fontSize="2xl" fontWeight="400" textAlign="left">
             My name is{' '}
             <Box as="strong" fontWeight="600">
-              Farras
+              Muhammad Farras Jibran
             </Box>{' '}
             and I&apos;m a{' '}
             <Box as="span" whiteSpace="nowrap">
               Full Stack Developer
             </Box>{' '}
-            from{' '}
-            <Box as="span" whiteSpace="nowrap">
-              Indonesia 🇮🇩
-            </Box>
+            from <Box as="span">Indonesia 🇮🇩.</Box>
           </Box>
           <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
-            This is my digital garden, where I write about the things I&apos;m working on and share
-            what I&apos;ve learned. 😊
+            I specialize in building{' '}
+            <Box as="strong" fontWeight="600">
+              scalable
+            </Box>
+            ,{' '}
+            <Box as="strong" fontWeight="600">
+              high-performance
+            </Box>{' '}
+            applications with modern technologies 🔥.
+          </Box>
+          <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
+            Explore my portfolio to see my work and tech stack—let’s build something amazing
+            together!
+          </Box>
+          <Box
+            as="a"
+            textAlign="left"
+            style={{ textDecoration: 'underline', cursor: 'pointer' }}
+            fontSize="xl"
+            mt={5}
+            href="assets/resume/resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+            color="black"
+          >
+            ↓ Resume
           </Box>
         </MotionFlex>
       </Flex>
-
-      <MotionBox
-        w="100%"
-        opacity="0"
-        initial={{
-          translateY: 80
-        }}
-        animate={{
-          translateY: 0,
-          opacity: 1,
-          transition: {
-            delay: ANIMATION_DURATION - 0.1,
-            duration: ANIMATION_DURATION
-          }
-        }}
-        zIndex={1}
-      >
-        <Box mt={10}>
-          <HStack justifyContent="center" width="100%">
-            <NextLink href="/about" passHref>
-              <HStack spacing={2} as={Link} color={linkColor}>
-                <Text fontSize="sm">More About Me</Text>
-                <Box height="1.2rem" width="1.2rem">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                    <path
-                      fillRule="evenodd"
-                      d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.415l.707-.708zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </Box>
-              </HStack>
-            </NextLink>
-          </HStack>
-        </Box>
-      </MotionBox>
     </Flex>
   );
 };

@@ -1,5 +1,5 @@
-import Head from 'next/head';
 import { SEO_IMAGE } from 'data/constants';
+import Head from 'next/head';
 
 type Props = {
   title: string;
@@ -32,7 +32,7 @@ Meta.defaultProps = {
   title: 'Muhammad Farras Jibran - Full Stack Developer',
   keywords:
     'web development, programming, web design, react js, chakra ui, next js, laravel, lumen, parse js',
-  description: 'Software Engineer. Lover of web and opensource.',
+  description: 'Software Engineer. Lover of web and building high scalable web applications.',
   image: SEO_IMAGE
 };
 

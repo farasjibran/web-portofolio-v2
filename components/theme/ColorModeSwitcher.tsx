@@ -1,6 +1,6 @@
-import { useColorMode, useColorModeValue, IconButtonProps } from '@chakra-ui/react';
-import useSound from 'use-sound';
+import { IconButtonProps, useColorMode, useColorModeValue } from '@chakra-ui/react';
 import { AnimatePresence } from 'framer-motion';
+import useSound from 'use-sound';
 import { MotionBox } from '../shared/animations/motion';
 
 type ColorModeSwitcherProps = Omit<IconButtonProps, 'aria-label'>;
@@ -32,7 +32,7 @@ export const ColorModeSwitcher: React.FC<ColorModeSwitcherProps> = () => {
         exit={{ y: 20, opacity: 0 }}
         transition={{ duration: 0.2 }}
         cursor="pointer"
-        fontSize={['2xl', '3xl', '3xl']}
+        fontSize={['xl', '2xl', '2xl']}
       >
         {mode === 'dark' ? '🌙' : '🌤'}
       </MotionBox>

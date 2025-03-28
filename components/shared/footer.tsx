@@ -1,4 +1,4 @@
-import { Stack, IconButton, Link, Box, Text, useColorModeValue, Flex } from '@chakra-ui/react';
+import { Box, Flex, IconButton, Link, Stack, Text, useColorModeValue } from '@chakra-ui/react';
 import siteConfig from '../../configs/site-config';
 
 const iconProps = {
@@ -31,23 +31,23 @@ const Footer = () => {
         <Text textAlign="center" fontSize="sm" color={useColorModeValue('gray.500', 'gray.200')}>
           © {new Date().getFullYear()} Muhammad Farras Jibran{' '}
         </Text>
-        {/* <Box fontSize="md" textAlign="left">
-        Website built with
-        <Box
-          as="span"
-          mx="2"
-          _before={{
-            cursor: "default",
-            content: '"❤️"'
-          }}
-          _hover={{
-            _before: {
-              content: '"☕️"'
-            }
-          }}
-        />
-        in Pakistan{"  "}🇵🇰
-      </Box> */}
+        <Box fontSize="md" textAlign="left">
+          Website built with
+          <Box
+            as="span"
+            mx="2"
+            _before={{
+              cursor: 'default',
+              content: '"❤️"'
+            }}
+            _hover={{
+              _before: {
+                content: '"☕️"'
+              }
+            }}
+          />
+          in Indonesia{'  '}🇮🇩
+        </Box>
         {/* </HStack> */}
         <Box textAlign="center">
           {siteConfig.author.accounts.map((sc, index) => (
