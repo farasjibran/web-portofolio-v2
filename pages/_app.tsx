@@ -1,15 +1,16 @@
-import { useEffect } from 'react';
-import App, { AppProps } from 'next/app';
-import { ChakraProvider, Box } from '@chakra-ui/react';
+import { Box, ChakraProvider } from '@chakra-ui/react';
+import { GoogleAnalytics } from '@next/third-parties/google';
+import { Analytics } from '@vercel/analytics/react';
 import AppLayout from 'components/layouts/appLayout';
-import { PrismGlobal } from 'components/theme/prism';
-import { useRouter } from 'next/router';
-import * as gtag from 'lib/gtag';
-import { AnimatePresence } from 'framer-motion';
 import { theme } from 'components/theme';
 import { AccentGlobal } from 'components/theme/Accent';
 import { FontsGlobal } from 'components/theme/fonts';
-import { Analytics } from '@vercel/analytics/react';
+import { PrismGlobal } from 'components/theme/prism';
+import { AnimatePresence } from 'framer-motion';
+import * as gtag from 'lib/gtag';
+import App, { AppProps } from 'next/app';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -29,10 +30,11 @@ function MyApp({ Component, pageProps }: AppProps) {
       <AccentGlobal />
       <PrismGlobal />
       <Analytics />
+      <GoogleAnalytics gaId="G-2ZKD9HQS9W" />
       <AppLayout>
         <AnimatePresence
           // exitBeforeEnter
-          mode='wait'
+          mode="wait"
           initial={false}
           onExitComplete={() => window.scrollTo(0, 0)}
         >
