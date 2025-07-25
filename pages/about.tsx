@@ -1,26 +1,26 @@
 import {
   Box,
-  Stack,
-  VStack,
-  Heading,
   Flex,
-  Text,
+  Heading,
   Image,
+  Stack,
+  Text,
   useColorMode,
-  useColorModeValue
+  useColorModeValue,
+  VStack
 } from '@chakra-ui/react';
-import { FaGraduationCap } from 'react-icons/fa';
-import { BsFillBriefcaseFill } from 'react-icons/bs';
-import {
-  PageSlideFade,
-  StaggerChildren,
-  CardTransition
-} from 'components/shared/animations/page-transitions';
-import { MotionBox } from 'components/shared/animations/motion';
-import { companies, institutes } from 'data/data';
-import Header from 'components/shared/header';
 import PageLayout from 'components/layouts/pageLayout';
+import { MotionBox } from 'components/shared/animations/motion';
+import {
+  CardTransition,
+  PageSlideFade,
+  StaggerChildren
+} from 'components/shared/animations/page-transitions';
+import Header from 'components/shared/header';
 import { Tags } from 'components/shared/Tags';
+import { companies, institutes } from 'data/data';
+import { BsFillBriefcaseFill } from 'react-icons/bs';
+import { FaGraduationCap } from 'react-icons/fa';
 
 interface CardProps {
   title: string;
@@ -34,6 +34,7 @@ interface CardProps {
 
 const TURQUOISE = '#06b6d4';
 
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const Card = (props: CardProps) => {
   const { title, role, skills, period, logo, colorMode, alt } = props;
   return (
@@ -177,6 +178,7 @@ const About = ({ companies, institutes }) => {
   );
 };
 
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export function getStaticProps() {
   return {
     props: {

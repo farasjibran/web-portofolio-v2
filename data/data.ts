@@ -3,9 +3,9 @@ export const companies = [
     title: 'IMP Studio',
     alt: 'IMP Studio image',
     role: 'Fullstack Developer',
-    skills: ['Next JS', 'Laravel', 'Lumen', 'Codeigniter', 'Parse JS'],
+    skills: ['Next JS', 'Laravel', 'Lumen', 'Django', 'Parse JS'],
     period: '2021 - Present',
-    logo: '/assets/images/logos/imp_studio_2.webp'
+    logo: '/assets/images/logos/imp_studio.webp'
   },
   {
     title: 'Rumah Coding',
@@ -161,22 +161,19 @@ export const skillsArray = [
     link: 'https://www.figma.com/',
     type: 'design',
     image: '/assets/images/skills/figma.webp'
-  }
-];
-
-export const newContent = [
-  {
-    link: '/blog/chakraui-templateskart-ui-updates',
-    text: 'ChakraUI TemplatesKart - UI updates',
-    showNewTag: false
   },
   {
-    link: '/blog/templateskart-free-chakra-ui-components-and-projects',
-    text: 'TemplatesKart | Free Chakra UI Components and Projects',
-    showNewTag: false
+    name: 'Python',
+    description: 'Web Development',
+    link: 'https://www.python.org/',
+    type: 'development',
+    image: '/assets/images/skills/python.webp'
   },
   {
-    link: '/blog/started-2022-by-updating-portfolio-website-1jde-temp-slug-4553258',
-    text: 'Started 2022 by updating portfolio website'
+    name: 'Django',
+    description: 'Web Development',
+    link: 'https://www.djangoproject.com/',
+    type: 'development',
+    image: '/assets/images/skills/django.webp'
   }
 ];

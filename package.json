@@ -3,6 +3,11 @@
   "license": "MIT",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=16.* <16.*",
+    "yarn": "1.22.19"
+  },
+  "packageManager": "yarn@1.22.19",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

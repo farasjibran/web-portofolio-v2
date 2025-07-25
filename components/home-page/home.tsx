@@ -1,6 +1,7 @@
 import { Avatar, Box, Flex } from '@chakra-ui/react';
 import { MotionBox, MotionFlex } from 'components/shared/animations/motion';
 import Header from 'components/shared/header';
+import UnderlinedText from 'components/shared/underlined-text';
 import { useLinkColor } from 'components/theme';
 import { useEffect, useState } from 'react';
 
@@ -134,19 +135,20 @@ const Home: React.FC = () => {
             Explore my portfolio to see my work and tech stack—let’s build something amazing
             together!
           </Box>
-          <Box
-            as="a"
-            textAlign="left"
-            style={{ textDecoration: 'underline', cursor: 'pointer' }}
-            fontSize="xl"
-            mt={5}
-            href="assets/resume/resume.pdf"
-            target="_blank"
-            rel="noreferrer"
-            color="black"
-          >
-            ↓ Resume
-          </Box>
+          <MotionBox whileHover={{ translateY: -5 }} width="max-content">
+            <Box
+              textAlign="left"
+              fontWeight="bold"
+              fontSize="xl"
+              cursor="pointer"
+              mt={5}
+              onClick={() =>
+                window.open('assets/resume/resume.pdf', '_blank', 'noopener,noreferrer')
+              }
+            >
+              <UnderlinedText color={ORANGE}>↓ Resume</UnderlinedText>
+            </Box>
+          </MotionBox>
         </MotionFlex>
       </Flex>
     </Flex>
